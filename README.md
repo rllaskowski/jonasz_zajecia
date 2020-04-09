@@ -1,2 +1,3 @@
-# jonasz_zajecia
-Kody do zadań przygotowujących do OIJ
+# Korepetycje Jonasz
+
+Rozwiazania zadań przygotowujących do OIJ
