@@ -2,8 +2,8 @@
 
 ```
 # N - oczekiwana wielkość tablicy
-tablica = [0]*N 
-
+# Tworzy tablicę o N elementach, wypełnioną zerami
+tablica = [0]*N
 ```
 
 ### Ciąg Fibbonaciego
