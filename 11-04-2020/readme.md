@@ -2,7 +2,7 @@
 
 Aby sortować listę możemy skorzystać z dwóch wbudowanych funkcji:
 
-## `list.sort()`
+### `list.sort()`
 
 ```
 lista = [1, 5, 2, 10, 12]
@@ -14,7 +14,7 @@ lista.sort()
 print(lista)
 ```
 
-## sorted(list)
+### `sorted(list)`
 
 ```
 lista = [1, 5, 2, 10, 12]
