@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Rozwiązanie zadania potęga
+
 n = int(input())
 potega = 1
 
