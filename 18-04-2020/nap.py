@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Rozwiązanie zadania Na przemian
+
 n = int(input())
 
 liczby = input().split()
