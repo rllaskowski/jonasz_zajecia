@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 
 
-"""
-
-6 2 4 3 2 5 1
-
-
-"""
-
-
 def main():
     n = int(input())
 
@@ -26,5 +18,6 @@ def main():
             print("-1", end=" ")
         else:
             print(k+1, end=" ")
+        
         
 main()
