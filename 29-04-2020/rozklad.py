@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def rozklad(n):
     print(n, end= ' = ')
     dzielniki = []
