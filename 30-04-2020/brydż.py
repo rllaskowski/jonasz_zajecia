@@ -20,6 +20,7 @@ def main():
     x  = input().split()
     n = int(x[0])
     k = int(x[1])
+    
     for i in range(n):
         c = input()
         imiona.append(c)
@@ -29,13 +30,7 @@ def main():
             if czyAnagram(imiona[i], imiona[j]) == True:
                 pary += 1    
     
-
     
-    print(pary)
-
-print(sorted("dabbc"))
-print(sorted("bdbac"))
-
 main()
 
 

@@ -1,15 +1,6 @@
 #!/usr/bin/python3
 
 
-"""
-Aragorn 7
-Boromir 3
-Eowina 4
-Arwena 2
-Eomer 1
-
-"""
-
 def main():
     x = input().split()
     n = int(x[0])
@@ -29,14 +20,8 @@ def main():
                 print(osoby[i][0], osoby[j][0])
                 return
     
-    print('NIE :/')
+    print('NIE')
 
                 
 main()
 
-"""
-1 1 1 1 1 1
-
-2 4 5 8 9 12 18 20 22 40 200 260 * milion
-
-"""

@@ -1,17 +1,5 @@
 #!/usr/bin/python3
 
-"""
-*przyklad*
-
-*ania wchodzi*
-
-
-*wchodza *
-Asia Wojtek Grzegorz
-
-"""
-
-
 def czyChlopiec(imie):
     if imie[-1] == 'a':
         return False
@@ -42,8 +30,6 @@ def main():
                     if czyChlopiec(imieWychodzacego) == True:
                        
                         break
-
-
 
 
 
