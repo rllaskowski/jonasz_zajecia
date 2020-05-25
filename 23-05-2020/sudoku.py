@@ -18,9 +18,20 @@ def czyDobryW(tab, w, n):
             czyByla[liczba] = True
         else:
             return False
-        
-
     return True
+
+
+def czyDobryK(tab, k, n):
+    czyByla = [False] * (n+1)
+    
+    for i in range(n):
+        liczba = tab[i][k]
+        if czyByla[liczba] == False:
+            czyByla[liczba] = True
+        else:
+            return False
+    return True
+
 
 
 def main():
@@ -35,4 +46,14 @@ def main():
         
         tab.append(x)
 
+    czyDobra = True
+
+    for i in range(n):
+        if czyDobryW(tab, i, n) == False or czyDobryK(tab, i, n) == False:
+            print('NIE')
+            czyDobra = False
+            break 
+        
+    if czyDobra == True:
+        print('TAK')
 main()
