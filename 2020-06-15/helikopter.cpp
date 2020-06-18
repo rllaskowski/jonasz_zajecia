@@ -3,27 +3,27 @@
 using namespace std;
 
 void wypisz(int ile, char c) {
-  cout << "H";
-  for (int i = 0; i < ile; i++) {
-    cout << c;
-  }
-  cout << "H" << endl;
+    cout << "H";
+    for (int i = 0; i < ile; i++) {
+        cout << c;
+    }
+    cout << "H" << endl;
 }
 
 int main() {
-  int d;
-  
-  cin >> d;
+    int d;
 
-  for (int i = 0; i < d / 2; i++) {
-    wypisz(d-2, ' ');
-  }
-  
-  wypisz(d-2, 'H');
-  
-  for (int i = 0; i < d / 2; i++) {
-    wypisz(d-2, ' ');
-  }
-  
-  return 0;
+    cin >> d;
+
+    for (int i = 0; i < d / 2; i++) {
+        wypisz(d-2, ' ');
+    }
+
+    wypisz(d-2, 'H');
+
+    for (int i = 0; i < d / 2; i++) {
+        wypisz(d-2, ' ');
+    }
+
+    return 0;
 }
