@@ -9,8 +9,6 @@ string rozklad(long long n) {
         for (int i = 2; i <= n && i <= 27; i++) {
             /* szukamy najmniejszego dzielnika liczby n 
                 zaczynając od 2 a koncząc na n */
-
-
             if (n % i == 0){
                 /* jesli reszta z dzielenia n przez i jest równa
                 0 to i jest dzielnikiem n */
@@ -38,7 +36,7 @@ int main() {
     long long n;
 
     cin >> t;
-    
+
     for (int i = 0; i < t; i++) {
         cin >> n;
 
