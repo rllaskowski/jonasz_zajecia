@@ -1,22 +1,30 @@
+/* 
+Naiwne rozwiązanie zadania "Litera a".
+Algorytm sprawdza wszystkie poprawne podsłowa przez poszerzanie podsłow
+rozpoczynających się na każdym z indeksów
+*/
+
 #include <iostream>
 using namespace std;
-
 
 int main() {
     int n;
     string slowo;
+
     cin >> n;
     cin >> slowo;
-    int najpocz = 0;
+    
+     /* gdzie znajduje się początek najlepszego słowa */
+    int najpocz = 0; 
+    /* gdzie znajduje się koniec najlepszego słowa */
     int najkon = 0;
     
     for (int i = 0; i < n; i++) {
-        /* poszerzamy podslowo zaczynajace się na indeksie i  w prawo dopoki mozemy
-        czyli nie przekraczamy wpisanego slowa oraz podslowo zawiera
-        maksymalnie jedną literę a */ 
         int kon = i;
         int ileA = 0;
 
+        /* poszerzamy podsłowo zaczynające się 
+        na indeksie i dopóki możemy */ 
         while (kon < n && ileA < 2) {
             if (slowo[kon] == 'a') {
                 ileA++;
@@ -25,23 +33,19 @@ int main() {
                 kon++;
             }
         }
-        /* kon indeks pierwszej za poprawnym slowem 
-        więc i to początek dobrego znalezionego slowa
-        a kon-1 to jego koniec
-        */
+        /* kon to indeks pierwszej litery za poprawnym podslowem */
 
         /* najkon-najpocz+1 to dlugosc dotychczas najlepszego podslowa 
-            (kon-1)-i+1 to dlugosc nowego znalezionego podslowa
-        */
-        if (najkon-najpocz+1 < kon-i) {
-           // znalezlismy nowy najlepszy wynik
+        (kon-1)-i+1 to dlugosc nowego znalezionego podslowa */
+        if (ileA == 1 && najkon-najpocz+1 < kon-i) {
+           /* znalezlismy nowy najlepszy wynik */
             najpocz = i;
-            najkon = kon - 1;
+            najkon = kon-1;
         }
 
     }
 
-    cout << najkon - najpocz + 1 << endl;
+    cout << najkon-najpocz+1 << endl;
     for (int i = najpocz; i <= najkon; i++) {
         cout << slowo[i];
     }

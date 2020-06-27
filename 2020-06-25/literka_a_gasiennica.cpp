@@ -1,3 +1,7 @@
+/* 
+Optymalne rozwiązanie zadania "Litera a" wykorzystujące metodę gąsienicy.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -33,13 +37,13 @@ int main() {
         }
 
         if (ileA == 1 && najkon-najpocz+1 < g-kon+1) {
-           // znalezlismy nowy najlepszy wynik
+            /* znalezlismy nowy najlepszy wynik */
             najpocz = kon;
             najkon = g;
         }
     }
 
-    cout << najkon-najpocz + 1 << endl;
+    cout << najkon-najpocz+1 << endl;
     
     for (int i = najpocz; i <= najkon; i++) {
         cout << slowo[i];
