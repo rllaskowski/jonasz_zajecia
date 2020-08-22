@@ -57,7 +57,6 @@ int main() {
         wyniki[i][i] = liczby[i];
     }
 
-
     /* Zaczynamy od i = 2 (czyli dla gier dlugosci dwa) poniewaz juz wpisalismy 
     do tablicy wyniki wszystkie wyniki dla gier dlugosci 1 */
     for (int i = 2; i <= n; i++) {
