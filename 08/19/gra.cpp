@@ -1,11 +1,11 @@
 /* 
-
+ 
 Jonasz i Robert graja w gre
 Zaczyna Jonasz
-
+ 
 n=6
 i = 4
-
+ 
 0 1 2 3 4 5
 5 1 2 9 2 5
  
@@ -81,5 +81,7 @@ int main() {
         }
     }
 
+
+    cout << wyniki[1][n];
     return 0;
 }
