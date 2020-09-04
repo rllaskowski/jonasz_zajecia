@@ -28,9 +28,11 @@ bool czyPoprawne(string ciag) {
             }
         }
     }
-    return ileOtwartych == 0;
 
+    return ileOtwartych == 0;
 }
+
+
 int main() {
     string nawiasowanie;
     cin >> nawiasowanie;
