@@ -4,7 +4,6 @@ using namespace std;
 
 
 /*
-
 12 16
 
 nww(a, b) = a*b/nwd(a,b)
@@ -31,7 +30,6 @@ a  b
 ..
 ..
 3    4
-
 */
 
 int nwd(int a, int b) {
