@@ -5,7 +5,6 @@ using namespace std;
 
 
 /*
-
 .S.....
 .##.##.
 .##.##.
@@ -14,15 +13,6 @@ using namespace std;
 .##.##.
 ....K..
 
-#####
-#   #
-# # #
-# # #
-# # #
-# # #
-# # 
-S ###
-
 1012345
 2##3##6
 3##4##7
@@ -30,21 +20,6 @@ S ###
 5##6#89
 6##7##!         
 7898K#@         
-
-labirynt
-S..
-...
-...
-
-odl:
-012
-120
-200
-
-odw:
-111
-110
-100
 */
 
 char labirynt[300][300];
@@ -88,7 +63,7 @@ int main() {
     }
 
     wypiszOdl();
-    for (int c = 0; c < 9; c++) {
+    for (int c = 0; c < n*m; c++) {
         cout << "Wypelnie teraz komorki w odleglosci " << c+1 << " od zrodla" << endl;
 
         for (int i = 0; i < n; i++) {
