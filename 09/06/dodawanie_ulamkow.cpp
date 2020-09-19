@@ -1,45 +1,14 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
-
-
-/*
-12 16
-
-nww(a, b) = a*b/nwd(a,b)
-
-
-12*16=192
-nww(12,16) = 192/4 = 48
-
-a  b
-12 16
-16 12
-4  12
-12  4
-8   4
-4   4
-0   4
-4   0
-
-
-123  4
-119  4
-115  4
-..
-..
-..
-3    4
-*/
 
 int nwd(int a, int b) {
     if (a < b) {
         swap(a, b);
     }
 
-    while (b > 0) {  
+    while (b > 0) {
         a %= b;
-        swap(a, b);          
+        swap(a, b);
     }
     return a;
 }
@@ -49,6 +18,31 @@ int nww(int a, int b) {
 }
 
 int main() {
+    int l1, l2, m1, m2, nl, nm;
+    int wynik = 0;
 
+    cin >> l1 >> m1;
+    cin >> l2 >> m2;
+
+    nm = nww(m1, m2); // mianownik przed skroceniem ulamka
+
+    l1 *= nm / m1;
+    l2 *= nm / m2;
+
+    nl = l1 + l2;
+
+    int dzielnik = nwd(nl, nm);
+    nl /= dzielnik;
+    nm /= dzielnik;
+
+    if (nl % nm == 0) {
+        //wynikiem jest liczba calkowita
+        cout << nl / nm;
+    } else if (nl < nm) {
+        cout << nl << "/" << nm;
+    } else {
+        cout << nl / nm << " " << nl % nm << "/" << nm;
+    }
+    
     return 0;
 }
