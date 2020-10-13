@@ -8,7 +8,7 @@ bool czyWczytana[100001];
 
 int main() {
   int n;
-  int liczba;
+  int liczba; 
   int wynik = 0;
   cin >> n;
   
