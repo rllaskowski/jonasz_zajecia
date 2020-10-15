@@ -8,16 +8,20 @@ vector <int> kraw[100001];
 bool          odw[100002];
 
 
-int spojna;
-void dfs(int v) {
+bool cykl = false;
+
+void dfs(int v, int skad) {
     odw[v] = true;
-    spojna++;
-    
+
     for (int i = 0; i < kraw[v].size(); i++) {
         int x = kraw[v][i];
         // x - numer wierzcholka, z ktorym polaczony jest v
         if (!odw[x]) {
-            dfs(x);
+            dfs(x, v);
+        } else if (skad != x){
+            // to znaczy ze wierzcholek x byl juz odzwiedzony ale nie jest 
+            // wierzcholkiem z ktorego przyszdlem
+            cykl = true;
         }
     }
 }
@@ -35,19 +39,16 @@ int main() {
         kraw[b].push_back(a);
     }
 
-    int wynik = 0;
-
     for (int i = 1; i <= n; i++) {
         if (!odw[i]) {
-            spojna = 0;
-            dfs(i);
-            
-            if (spojna > wynik) {
-                wynik = spojna;
-            }
+            dfs(i, 0);  
         }
     }
 
-    cout << wynik << endl;
+    if (cykl) {
+        cout << "TAK" << endl;
+    } else {
+        cout << "NIE" << endl;
+    }
     return 0;
 }
