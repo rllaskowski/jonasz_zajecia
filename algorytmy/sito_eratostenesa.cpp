@@ -1,13 +1,10 @@
-/*
-Sito Eratostenesa
-*/
-
+/* Sito Eratostenesa - znajdowanie liczb pierwszych mniejszych od n */
 
 #include <iostream>
 
 using namespace std;
 
-bool czyZlozonona[1000000];
+bool czyZlozonona[1000001];
 
 void sito(int n) {
     for (int i = 2; i < n; i++) {
@@ -25,8 +22,15 @@ void sito(int n) {
 int main() {
     int n;
     
-    cin >> n;
+    cin >> n; // zakladamy, że n < rozmiar tablicy czyZlozona
 
     sito(n);
+
+    for (int i = 2; i <= n; i++) {
+        if (!czyZlozonona[i]) {
+            cout << i << endl;
+        }
+    }
+
     return 0;
 }

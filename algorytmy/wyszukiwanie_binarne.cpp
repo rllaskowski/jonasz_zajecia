@@ -1,9 +1,6 @@
 /*
-
-Algorytm wyszukiwania binarnego wartości
-w posortowanej tablicy 
-
-
+Znajdowanie elementu o danej wartości w posortowanej tablicy
+przy pomocy wyszukiwania binarnego
 */
 
 #include <iostream>
@@ -14,6 +11,8 @@ using namespace std;
 int n;
 int tab[1000000];
 
+/* Zwraca indeks elementu o wartości x w tablicy tab
+lub -1 gdy taki element nie istnieje */
 int szukaj(int x) {
     int p = 0;
     int k = n-1;
