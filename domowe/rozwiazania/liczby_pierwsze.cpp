@@ -11,6 +11,14 @@ bool czyPierwsza(long long n) {
 }
 
 int main() {
+<<<<<<< HEAD
+=======
+    for (int i = 0; i < 1000000000;i++) {
+        cout << "tak" << endl;
+    }
+    cout << "KONIEC";
+
+>>>>>>> 2cd3343935964c0819d1cd34acf10e08ecdfb3e2
     long long n;
     cin >> n;
 
@@ -21,4 +29,8 @@ int main() {
     }
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2cd3343935964c0819d1cd34acf10e08ecdfb3e2
