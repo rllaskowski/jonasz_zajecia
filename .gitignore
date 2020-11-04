@@ -8,6 +8,7 @@
 ./07/28/friday
 ./07/28/sztanga
 ./07/28/zbiory
+./11/04/zegarek
 ./.git/hooks/pre-rebase.sample
 ./.git/hooks/pre-applypatch.sample
 ./.git/hooks/prepare-commit-msg.sample
