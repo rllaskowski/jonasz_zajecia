@@ -23,9 +23,8 @@ int main() {
         // przechodzimy po wszystkich interesujacych nas kwotach do wydania
 
         for (int k = 0; k <= maxKwota; k++) {
-            // czy korzystajac z mniejszej ilosci monet
+            // czy korzystajac z mniejszej ilosci monet(i-1 dostepnych monet)
             // moglem wydac kwote k?
-
             if (czyMogeWydac[i-1][k]) {
                 // skoro moge wydac za pomoca mniejszej ilosci monet
                 // to nowa moneta nawet nie jest mi potrebna - dalej moge wydac te kwote
