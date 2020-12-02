@@ -13,6 +13,7 @@ bool czyAnagram(string slowo1, string slowo2) {
 
 /*
 n
+5
 
 */
 int main() {
