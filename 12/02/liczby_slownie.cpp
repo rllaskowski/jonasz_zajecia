@@ -4,10 +4,16 @@
 #include <map>
 using namespace std;
 
-int main() {
-    map<string, int> mapa;
+map<string, int> mapa;
+
+void uzupełnij() {
     mapa["milon"] = 1000000;
     mapa["siedemnascie"] = 17;
+}
+
+int main() {
+    uzupełnij();
+    
 
     cout << mapa["Jonasz"];
     string slowo;
