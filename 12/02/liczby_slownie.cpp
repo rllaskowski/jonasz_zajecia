@@ -6,16 +6,16 @@ using namespace std;
 
 map<string, int> mapa;
 
-void uzupełnij() {
+void uzupelnij() {
     mapa["milon"] = 1000000;
     mapa["siedemnascie"] = 17;
 }
 
 int main() {
-    uzupełnij();
+    uzupelnij();
     
-
-    cout << mapa["Jonasz"];
+    mapa["milion"] = 1000000;
+    cout << mapa["milionów"];
     string slowo;
     vector<string> slowa; 
       
