@@ -51,6 +51,9 @@
 ./.git/hooks/post-update.sample
 ./.git/hooks/pre-push.sample
 ./.git/hooks/pre-merge-commit.sample
+./2021/01/13/smok
+./2021/01/13/smok3
+./2021/01/13/smok2
 ./2021/01/05/zygzak
 ./2021/01/06/pocztowka
 ./2021/01/06/kaledarze
