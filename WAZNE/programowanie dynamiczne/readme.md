@@ -1,0 +1,1 @@
+[Link do lekcji na mainie](https://main2.edu.pl/main2/courses/show/7/20/)
