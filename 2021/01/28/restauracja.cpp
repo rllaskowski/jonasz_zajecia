@@ -43,6 +43,10 @@ int main() {
         Albo gasiennica jest ciagle za chuda
         Albo ilosc jej kalorii jest >= a
         */
+
+        if (sumaKal >= a && sumaKal <= b) {
+            wynik = min(sumaP, wynik);
+        }
     }
 
 
